@@ -24,6 +24,9 @@ export const mapGitlabIssue = (
     updated_at: issue.updated_at,
     due_date: issue.due_date,
 
+    time_estimate: issue.time_stats.time_estimate,
+    total_time_spent: issue.time_stats.total_time_spent,
+
     // added
     wasUpdated: false,
     commentsNr: issue.user_notes_count,

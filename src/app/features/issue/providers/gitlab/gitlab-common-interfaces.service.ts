@@ -178,6 +178,8 @@ export class GitlabCommonInterfacesService implements IssueServiceInterface {
       issueId: issue.id,
       isDone: this._isIssueDone(issue),
       dueDay: issue.due_date ? getWorklogStr(issue.due_date) : undefined,
+      timeSpent: issue.total_time_spent,
+      timeEstimate: issue.time_estimate,
     };
   }
 
